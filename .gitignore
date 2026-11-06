@@ -47,3 +47,6 @@ yarn-error.log*
 .cache/
 temp/
 tmp/
+
+# Documentation (local only)
+docs/
