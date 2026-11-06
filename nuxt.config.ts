@@ -1,6 +1,11 @@
 export default defineNuxtConfig({
   ssr: false,
   compatibilityDate: '2024-11-06',
+
+  // Deploy target: Cloudflare Pages
+  nitro: {
+    preset: 'cloudflare-pages',
+  },
   
   srcDir: 'app/',
   

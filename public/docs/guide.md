@@ -11,3 +11,9 @@ cd /Users/admin/Project/01.\ Fullstack\ Web\ Developer/13.\ Nextjs/cvbanjarindah
 
 ===
 
+git add .
+git commit -m "your message"
+git push origin main
+
+===
+
