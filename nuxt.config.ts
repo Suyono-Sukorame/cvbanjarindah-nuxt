@@ -75,10 +75,9 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    supabaseServiceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY,
     public: {
-      supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL,
-      supabaseAnonKey: process.env.NUXT_PUBLIC_SUPABASE_ANON_KEY,
+      supabaseEndpoint: process.env.SUPABASE_URL || process.env.NUXT_PUBLIC_SUPABASE_URL,
+      supabasePublishableKey: process.env.SUPABASE_KEY || process.env.NUXT_PUBLIC_SUPABASE_ANON_KEY,
       geminiApiKey: process.env.NUXT_PUBLIC_GEMINI_API_KEY,
       appName: 'CV Banjar Indah',
       appUrl: process.env.NUXT_PUBLIC_APP_URL || 'http://localhost:3000',

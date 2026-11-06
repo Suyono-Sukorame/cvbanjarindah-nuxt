@@ -4,8 +4,8 @@ export const useSupabase = () => {
   const config = useRuntimeConfig();
 
   const supabase = createClient(
-    config.public.supabaseUrl,
-    config.public.supabaseAnonKey
+    config.public.supabaseEndpoint,
+    config.public.supabasePublishableKey
   );
 
   return {
@@ -64,7 +64,7 @@ export const useSupabase = () => {
               email: inquiry.email,
               phone: inquiry.phone,
               message: inquiry.message,
-              status: 'pending',
+              status: 'new',
               created_at: new Date(),
             }
           ]);
